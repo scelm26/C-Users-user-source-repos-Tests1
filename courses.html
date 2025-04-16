@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши курсы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Такой же header как на главной -->
+    </header>
+
+    <main class="courses-container">
+        <h1>Наши курсы</h1>
+
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="images/course1.jpg" alt="Курс 1">
+                <h3>Основы программирования</h3>
+                <p class="course-description">Изучите основы программирования на Python...</p>
+                <p class="course-price">9,999 ₽</p>
+                <button class="buy-button" data-course-id="1">Купить курс</button>
+            </div>
+
+            <!-- Другие курсы -->
+        </div>
+
+        <!-- Модальное окно оплаты -->
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <h2>Оформление покупки</h2>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="cardNumber">Номер карты</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiryDate">Срок действия</label>
+                            <input type="text" id="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardName">Имя на карте</label>
+                        <input type="text" id="cardName" required>
+                    </div>
+                    <button type="submit" class="pay-button">Оплатить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Такой же footer как на главной -->
+    </footer>
+
+    <script src="courses.js"></script>
+</body>
+</html>

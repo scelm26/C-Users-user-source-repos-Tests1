@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Такой же header как на главной -->
+    </header>
+
+    <main class="account-container">
+        <div class="account-sidebar">
+            <div class="user-profile">
+                <img src="Борис Н" alt="Аватар" class="user-avatar">
+                <h3 class="user-name">Борис Николаевич</h3>
+                <p class="user-email">scelm26.ru</p>
+            </div>
+            <nav class="account-menu">
+                <a href="#" class="active">Мои курсы</a>
+                <a href="#">Настройки</a>
+                <a href="#">Платежи</a>
+                <a href="#">Выйти</a>
+            </nav>
+        </div>
+
+        <div class="account-content">
+            <h2>Мои курсы</h2>
+
+            <div class="user-courses">
+                <div class="user-course">
+                    <img src="images/course1.jpg" alt="Курс 1">
+                    <div class="course-info">
+                        <h3>Основы программирования</h3>
+                        <p class="course-progress">Прогресс: 45%</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%"></div>
+                        </div>
+                        <button class="continue-button">Продолжить обучение</button>
+                    </div>
+                </div>
+
+                <!-- Другие курсы пользователя -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Такой же footer как на главной -->
+    </footer>
+
+    <script src="account.js"></script>
+</body>
+</html>
